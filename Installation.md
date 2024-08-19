@@ -19,7 +19,7 @@
 ***
 
 ### Winget
-Make sure you have installed the latest version of [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) and verified that installed binaries are available in your $PATH before proceeding.
+Make sure you have installed the latest version of [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) and verified that installed binaries are available in your `$PATH` before proceeding.
 Install the YASB using winget install
 ```
 winget install AmN.yasb
