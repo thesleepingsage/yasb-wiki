@@ -1,4 +1,5 @@
-Welcome to the YASB wiki!
+<p align="center"><img src="https://raw.githubusercontent.com/amnweb/yasb/main/src/assets/images/app_icon.png" width="180"></p>
+<h2 align="center">Welcome to the YASB wiki!</h2>
 
 First of all, **YASB** needs to run ONLY under **Windows**
 
