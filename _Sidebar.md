@@ -1,11 +1,9 @@
-<div style="font-size: 16px;">
-
 - [Home](./Home)
 - [Installation](./Installation)
 - [Configuration](./Configuration)
 - [Styling](./Styling)
 - [FAQ](./FAQ)
-- Modules:
+- Widgets:
     - [Active Windows Title](./Widget:-Active-Windows-Title)
     - [Battery](./Widget:-Battery)
     - [CPU](./Widget:-CPU)
@@ -22,5 +20,3 @@
     - [Komorebi Workspaces](./Widget:-Komorebi-Workspaces)
     - [Komorebi Layout](./Widget:-Komorebi-Layout)
 - [Writing Widget](./Writing-Widget)
-
-</div>
