@@ -4,3 +4,47 @@ The configuration uses the YAML file format and is named `config` or `config.yam
 
 Valid directories for this file are `C:/Users/{username}/.config/yasb/` or path where YASB is Installed.
 A good starting point is the [default config](https://github.com/amnweb/yasb/blob/main/src/config.yaml).
+
+All valid options for the widgets are listed on the widgets page.
+
+
+ 
+# Status Bar Root Configuration
+| Option            | Type    | Default       | Description |
+|-------------------|---------|---------------|-------------|
+| `watch_stylesheet`         | boolean | `true`        | Reload bar when style is changed. |
+| `watch_config`         | boolean    | `true`        | Reload bar when config is changed. |
+| `debug`      | boolean  | `false`   | Enable debug mode to see more logs |
+
+
+# Komorebi settings for tray menu
+| Option            | Type    | Default       | Description |
+|-------------------|---------|---------------|-------------|
+| `start_command`         | string | `"komorebic start --whkd"` | Start komorebi with --whkd and default config location. |
+| `stop_coommand`         | string    | `"komorebic stop --whkd"` | Stop komorebi. |
+| `reload_command`      | string  | `"komorebic reload-configuration"` | Reload komorebi configuration.|
+
+
+# Status Bar Configuration
+| Option            | Type    | Default       | Description |
+|-------------------|---------|---------------|-------------|
+| `enabled`         | boolean | `true`        | Whether the status bar is enabled. |
+| `screens`         | list    | `['*']`       | The screens on which the status bar should be displayed. |
+| `class_name`      | string  | `"yasb-bar"`  | The CSS class name for the status bar. |
+| `alignment`       | object  | `{position: "top", center: false}` | The alignment settings for the status bar. |
+| `blur_effect`     | object  | `{enabled: false, acrylic: false, dark: false}` | The blur effect settings for the status bar. |
+| `window_flags`    | object  | `{always_on_top: false, windows_app_bar: true}` | The window flags for the status bar. |
+| `dimensions`      | object  | `{width: "100%", height: 36}` | The dimensions of the status bar. |
+| `padding`         | object  | `{top: 4, left: 0, bottom: 4, right: 0}` | The padding for the status bar. |
+| `widgets`         | list  | `left[],center[],right[]` | Active widgets and position. |
+
+# Multiple Bars Example
+
+```bars:
+  status-bar:
+    screens: ['DELL P2419H (1)'] 
+    ...
+  status-bar-2:
+    screens: ['DELL P2419H (2)'] 
+    ...```
+
