@@ -2,7 +2,7 @@
 | Option     | Type   | Default | Description                                                                 |
 |------------|--------|---------|-----------------------------------------------------------------------------|
 | `label`   | string | {data}    | The label for the applications widget.                                      |
-| `class_name` | string | [`""`] | The CSS class name for styling the widget. Optional.                        |
+| `class_name` | string | `""` | The CSS class name for styling the widget. Optional.                        |
 | `app_list`  | list   | `[]`| Application list with command. |
 
 ## Example Configuration
