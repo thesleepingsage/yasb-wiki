@@ -5,6 +5,7 @@
 - [FAQ](./FAQ)
 - Widgets:
     - [Active Windows Title](./Widget:-Active-Windows-Title)
+    - [Applications](./Widget:-Applications)
     - [Battery](./Widget:-Battery)
     - [CPU](./Widget:-CPU)
     - [Clock](./Widget:-Clock)
