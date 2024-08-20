@@ -36,7 +36,7 @@ github:
 - **label_alt:** The alternative format string for the label. Useful for displaying additional notification details.
 - **update_interval:** The interval in seconds to update the notifications. Must be between 60 and 3600.
 - **token:** The GitHub personal access token.
-- **max_notification:** The maximum number of notifications to display in the menu.
+- **max_notification:** The maximum number of notifications to display in the menu, max 50.
 - **only_unread:** Whether to show only unread notifications.
 - **max_field_size:** The maximum number of characters in the title before truncation.
 - **menu_width:** The width of the menu in pixels.
