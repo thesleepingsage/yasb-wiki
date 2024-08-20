@@ -17,6 +17,7 @@
     - [Power Menu](./Widget:-Power-Menu)
     - [Volume](./Widget:-Volume)
     - [Wallpapers](./Widget:-Wallpapers)
+    - [Weather](./Widget:-Weather)
     - [Komorebi Workspaces](./Widget:-Komorebi-Workspaces)
     - [Komorebi Layout](./Widget:-Komorebi-Layout)
 - [Writing Widget](./Writing-Widget)
