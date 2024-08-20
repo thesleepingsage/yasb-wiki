@@ -1,4 +1,4 @@
-## Config file
+# Config file
 
 The configuration uses the YAML file format and is named `config` or `config.yaml`.
 
@@ -9,7 +9,7 @@ All valid options for the widgets are listed on the widgets page.
 
 
  
-# Status Bar Root Configuration
+## Status Bar Root Configuration
 | Option            | Type    | Default       | Description |
 |-------------------|---------|---------------|-------------|
 | `watch_stylesheet`         | boolean | `true`        | Reload bar when style is changed. |
@@ -17,7 +17,8 @@ All valid options for the widgets are listed on the widgets page.
 | `debug`      | boolean  | `false`   | Enable debug mode to see more logs |
 
 
-# Komorebi settings for tray menu
+
+## Komorebi settings for tray menu
 | Option            | Type    | Default       | Description |
 |-------------------|---------|---------------|-------------|
 | `start_command`         | string | `"komorebic start --whkd"` | Start komorebi with --whkd and default config location. |
@@ -25,7 +26,8 @@ All valid options for the widgets are listed on the widgets page.
 | `reload_command`      | string  | `"komorebic reload-configuration"` | Reload komorebi configuration.|
 
 
-# Status Bar Configuration
+
+## Status Bar Configuration
 | Option            | Type    | Default       | Description |
 |-------------------|---------|---------------|-------------|
 | `enabled`         | boolean | `true`        | Whether the status bar is enabled. |
