@@ -13,7 +13,7 @@
     - [Language](./Widget:-Language)
     - [Media](./Widget:-Media)
     - [Memory](./Widget:-Memory)
-    - [Network](./Widget:-Network)
+    - [Network](./Widget:-Traffic)
     - [Power Menu](./Widget:-Power-Menu)
     - [Volume](./Widget:-Volume-Slider)
     - [Wallpapers](./Widget:-Wallpapers)
