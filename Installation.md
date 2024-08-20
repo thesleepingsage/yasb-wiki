@@ -1,3 +1,7 @@
+### Requirements
+- Nerd Fonts. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads) (JetBrainsMono recommended)
+- Windows 10 & 11
+
 ### Installer
 - Visit the [releases page](https://github.com/amnweb/yasb/releases) on GitHub.
 - Look for the latest release version, which will typically be listed at the top.
