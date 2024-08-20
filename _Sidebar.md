@@ -15,7 +15,7 @@
     - [Memory](./Widget:-Memory)
     - [Traffic](./Widget:-Traffic)
     - [Power Menu](./Widget:-Power-Menu)
-    - [Volume](./Widget:-Volume-Slider)
+    - [Volume](./Widget:-Volume)
     - [Wallpapers](./Widget:-Wallpapers)
     - [Komorebi Workspaces](./Widget:-Komorebi-Workspaces)
     - [Komorebi Layout](./Widget:-Komorebi-Layout)
