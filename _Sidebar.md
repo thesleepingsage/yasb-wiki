@@ -11,6 +11,7 @@
     - [Clock](./Widget:-Clock)
     - [Custom](./Widget:-Custom)
     - [Github](./Widget:-Github)
+    - [Disk](./Widget:-Disk)
     - [Language](./Widget:-Language)
     - [Media](./Widget:-Media)
     - [Memory](./Widget:-Memory)
