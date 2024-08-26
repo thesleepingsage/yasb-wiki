@@ -35,7 +35,7 @@ github:
 - **label:** The format string for the label. You can use placeholders like `{icon}` to dynamically insert icon information.
 - **label_alt:** The alternative format string for the label. Useful for displaying additional notification details.
 - **update_interval:** The interval in seconds to update the notifications. Must be between 60 and 3600.
-- **token:** The GitHub personal access token. GitHub Personal access tokens (classic) https://github.com/settings/tokens you can set token: env, this means you have to set YASB_GITHUB_TOKEN in environment variable.
+- **token:** The GitHub personal access token. GitHub Personal access tokens (classic) https://github.com/settings/tokens you can set `token: env`, this means you have to set YASB_GITHUB_TOKEN in environment variable.
 - **max_notification:** The maximum number of notifications to display in the menu, max 50.
 - **only_unread:** Whether to show only unread notifications.
 - **max_field_size:** The maximum number of characters in the title before truncation.
