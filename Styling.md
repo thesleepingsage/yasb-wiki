@@ -2,7 +2,7 @@
 
 Styling is done using the CSS file format and with a file named `style.css`.
 
-Valid directories for this file are C:/Users/{username}/.config/yasb/ or path where YASB is Installed. A good starting point is the [default style](https://github.com/amnweb/yasb/blob/main/src/styles.css).
+Valid directories for this file are `C:/Users/{username}/.config/yasb/` or path where YASB is Installed. A good starting point is the [default style](https://github.com/amnweb/yasb/blob/main/src/styles.css).
 
 ## Bar styling
 
