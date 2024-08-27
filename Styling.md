@@ -35,7 +35,7 @@ The main YASB windows carry a class tag with the name of the output this window 
 * { font-size: 13px;color: #cdd6f4; }
 ```
 
-will set the default font size and color of all elements unless overridden later on.
+Example above will set the default font size and color of all elements unless overridden later on.
 
 
 ## Style Icons
