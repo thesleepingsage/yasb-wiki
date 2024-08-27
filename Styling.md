@@ -29,7 +29,7 @@ Example how to target clock widget
 
 ## Per-output styling
 
-The main YASB windows carry a class tag with the name of the output this window is shown on. This can be used to apply different styles depending on the output. E.g.,
+The main YASB windows carry a class tag with the name of the output this window is shown on.
 
 ```
 * { font-size: 13px;color: #cdd6f4; }
