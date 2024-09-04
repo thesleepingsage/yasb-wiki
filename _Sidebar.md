@@ -16,6 +16,7 @@
     - [Media](./Widget:-Media)
     - [Memory](./Widget:-Memory)
     - [Traffic](./Widget:-Traffic)
+    - [Taskbar](./Widget:-Taskbar)
     - [Power Menu](./Widget:-Power-Menu)
     - [Volume](./Widget:-Volume)
     - [Wallpapers](./Widget:-Wallpapers)
