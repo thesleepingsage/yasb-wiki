@@ -8,6 +8,7 @@
 | `hide_if_offline`       | boolean | `false`         | Whether to hide the widget if Komorebi is offline.                          |
 | `label_zero_index`        | boolean | `false`    | Whether to use zero-based indexing for workspace labels.                    |
 | `hide_empty_workspaces`  | boolean | `false`      | Whether to hide empty workspaces.                                           |
+| `container_padding`  | dict | `{'top': 0, 'left': 0, 'bottom': 0, 'right': 0}`      | Explicitly set padding inside widget container.
 
 ## Example Configuration
 
@@ -22,6 +23,11 @@ komorebi_workspaces:
     label_zero_index: false
     hide_empty_workspaces: false
     hide_if_offline: false
+    container_padding: 
+      top: 0
+      left: 8
+      bottom: 0
+      right: 8
 ```
 
 ## Description of Options
@@ -32,3 +38,4 @@ komorebi_workspaces:
 - **hide_if_offline:** Whether to hide the widget if Komorebi is offline.
 - **label_zero_index:** Whether to use zero-based indexing for workspace labels.
 - **hide_empty_workspaces:** Whether to hide empty workspaces.
+- **container_padding:** Explicitly set padding inside widget container.
