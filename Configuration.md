@@ -52,7 +52,7 @@ All valid options for the widgets are listed on the widgets page.
 ```
 
 # Blur Options
-We used WIndows APi for blur, and because of this some part is limited with OS.
+We used Windows API for blur, and because of this some parts are limited with the OS.
 
 `blur_effect.enabled` Will enable defaul blur.<br>
 `blur_effect.acrylic` Enable an acrylic blur effect behind a window.<br>
