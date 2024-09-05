@@ -58,4 +58,4 @@ We used Windows API for blur, and because of this some parts are limited with th
 `blur_effect.acrylic` Enable an acrylic blur effect behind a window.<br>
 `blur_effect.dark_mode` Dark mode and more shadow below bar.<br>
 `blur_effect.round_corners` True or False, if set to True Windows will add radius. You can't set a custom value.<br>
-`blur_effect.border_color` Default rouded corners for bar can be `None`, `System` or `Hex Color`.
+`blur_effect.border_color` Default border color for bar can be `None`, `System` or `Hex Color`. (This applies to system round_corners and if blur_effect.round_corners is True.)
