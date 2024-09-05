@@ -39,3 +39,13 @@ komorebi_workspaces:
 - **label_zero_index:** Whether to use zero-based indexing for workspace labels.
 - **hide_empty_workspaces:** Whether to hide empty workspaces.
 - **container_padding:** Explicitly set padding inside widget container.
+
+
+## Style
+```css
+.komorebi-workspaces {} /*Style for widget.*/
+.komorebi-workspaces .widget-container {} /*Style for widget container.*/
+.komorebi-workspaces .ws-btn {} /*Style for buttons.*/
+.komorebi-workspaces .ws-btn.populated {} /*Style for buttons which contain window and are not empty.*/
+.komorebi-workspaces .ws-btn.active {} /*Style for the active workspace button.*/
+```
