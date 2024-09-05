@@ -38,3 +38,6 @@ taskbar:
     padding:0 6px;
 }
 ```
+
+> [!IMPORTANT]  
+> Taskbar apps will work only if they are minimized so that YASB can restore them on click; if you close the app to go in the system tray, YASB can't work in that way.
