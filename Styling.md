@@ -1,6 +1,6 @@
 ## Style file    
 
-Styling is done using the CSS file format and with a file named `style.css`.
+Styling is done using the CSS file format and with a file named `styles.css`.
 
 Valid directories for this file are `C:/Users/{username}/.config/yasb/` or path where YASB is Installed. A good starting point is the [default style](https://github.com/amnweb/yasb/blob/main/src/styles.css).
 
@@ -75,5 +75,5 @@ Example how to target widget container
 ```
 
 > **Note:**
-> Keep the mind YASB is writen in Python and styled with CSS is very limited. You can't use CSS3 or any other advanced CSS features.
+> Keep the mind YASB is written in Python and styled with CSS is very limited. You can't use CSS3 or any other advanced CSS features.
 
