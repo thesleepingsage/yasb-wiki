@@ -51,10 +51,11 @@ All valid options for the widgets are listed on the widgets page.
     ...
 ```
 
-# Blur options
+# Blur Options
 We used WIndows APi for blur, and because of this some part is limited with OS.
 
 `blur_effect.enabled` Will enable defaul blur.<br>
 `blur_effect.acrylic` Enable an acrylic blur effect behind a window.<br>
 `blur_effect.dark_mode` Dark mode and more shadow below bar.<br>
-`blur_effect.round_corners` Default rouded corners for bar, can be None, System or Hex Color.
+`blur_effect.round_corners` True or False, if set True Windows will add radius. You can't set custom value.<br>
+`blur_effect.border_color` Default rouded corners for bar, can be None, System or Hex Color.
