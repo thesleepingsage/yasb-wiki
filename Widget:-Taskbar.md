@@ -3,7 +3,7 @@
 |-------------------|---------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | `icon_size`           | integer  | 16                        | The size of icons |
 | `ignore_apps`       | dict    | `processes:[],titles[],classes:[]` | Ignore some apps. |
-
+| `animation`  | boolean | `false`      | Icons animation.                                           |
 
 ## Example Configuration
 
@@ -12,6 +12,7 @@ taskbar:
   type: "yasb.taskbar.TaskbarWidget"
   options:
     icon_size: 16
+    animation: true
     ignore_apps:
       processes: []
       titles: []
@@ -20,7 +21,8 @@ taskbar:
 
 ## Description of Options
 
-- **options:** The size of icons which will show in the widget.
+- **icon_size:** The size of icons which will show in the widget.
+- **animation:** Icons animation.
 - **ignore_apps:** A dictionary that allows you to specify which applications should be ignored by the taskbar widget. It includes:
 - processes: A list of process names to ignore.
 - titles: A list of window titles to ignore.
