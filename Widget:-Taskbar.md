@@ -4,6 +4,7 @@
 | `icon_size`           | integer  | 16                        | The size of icons |
 | `ignore_apps`       | dict    | `processes:[],titles[],classes:[]` | Ignore some apps. |
 | `animation`  | boolean | `false`      | Icons animation.                                           |
+| `container_padding`  | dict | `{'top': 0, 'left': 0, 'bottom': 0, 'right': 0}`      | Explicitly set padding inside widget container.
 
 ## Example Configuration
 
@@ -17,12 +18,18 @@ taskbar:
       processes: []
       titles: []
       classes: []
+    container_padding: 
+      top: 0
+      left: 8
+      bottom: 0
+      right: 8
 ```
 
 ## Description of Options
 
 - **icon_size:** The size of icons which will show in the widget.
 - **animation:** Icons animation.
+- **container_padding:** Explicitly set padding inside widget container.
 - **ignore_apps:** A dictionary that allows you to specify which applications should be ignored by the taskbar widget. It includes:
 - processes: A list of process names to ignore.
 - titles: A list of window titles to ignore.
