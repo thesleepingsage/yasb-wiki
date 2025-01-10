@@ -6,10 +6,11 @@
 | `update_interval` | integer | `3600`                                                                 | The interval in seconds to update the weather data. Must be between 60 and 36000000. |
 | `hide_decimal`  | boolean | `False`                                                                 | Whether to hide the decimal part of the temperature. |
 | `location`      | string  | `'London'`                                                              | The location for which to fetch the weather data. |
+| `units`         | string  | `'metric'`                                                              | The units for the weather data. Can be `'metric'` or `'imperial'`. |
 | `api_key`       | string  | `'0'`                                                                   | The API key for accessing the weather service. |
 | `icons`         | dict    | `{ 'sunnyDay': '\ue30d', 'clearNight': '\ue32b', 'cloudyDay': '\ue312', 'cloudyNight': '\ue311', 'rainyDay': '\udb81\ude7e', 'rainyNight': '\udb81\ude7e', 'snowyIcyDay': '\udb81\udd98', 'snowyIcyNight': '\udb81\udd98', 'blizzard': '\uebaa', 'default': '\uebaa' }` | A dictionary of icons for different weather conditions. |
 | `callbacks`     | dict    | `{ 'on_left': 'do_nothing', 'on_middle': 'do_nothing', 'on_right': 'do_nothing' }` | Callbacks for mouse events on the weather widget. |
-
+| `weather_card`  | dict    | `{ 'enabled': True, 'blur': True, 'round_corners': True, 'round_corners_type': 'normal', 'border_color': 'System', 'alignment': 'right', 'direction': 'down', 'distance': 6, 'icon_size': 64 }` | Configuration for the weather card popup display. Controls visibility, appearance, and positioning. |
 ## Example Configuration
 
 ```yaml
@@ -17,13 +18,16 @@ weather:
   type: "yasb.weather.WeatherWidget"
   options:
     label: "<span>{icon}</span> {temp_c}"
-    label_alt: "{location}: Min {min_temp_c}, Max {max_temp_c}, Humidity {humidity}"
+    label_alt: "{location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
     api_key: "209841561465465461" # Get your free API key from https://www.weatherapi.com/
     update_interval: 600 # Update interval in seconds, Min 600 seconds
     hide_decimal: true
+    units: "metric" # Can be 'metric' or 'imperial'
     location: "Los Angeles, CA, USA" # You can use "USA Los Angeles 90006" {COUNTRY CITY ZIP_CODE}, or just city.
     callbacks:
-      on_left: "toggle_label"
+      on_left: "toggle_card"
+      on_middle: "do_nothing"
+      on_right: "toggle_label"
     icons: 
       sunnyDay: "\ue30d"
       clearNight: "\ue32b"
@@ -35,6 +39,16 @@ weather:
       snowyIcyNight: "\udb81\udd98"
       blizzard: "\uebaa"
       default: "\uebaa"
+    weather_card: 
+      enabled: True
+      blur: True
+      round_corners: True
+      round_corners_type: "normal"
+      border_color: "System"
+      alignment: "right"
+      direction: "down"
+      distance: 6
+      icon_size: 64
 ```
 
 ## Description of Options
@@ -45,7 +59,18 @@ weather:
 - **hide_decimal:** Whether to hide the decimal part of the temperature.
 - **location:** The location for which to fetch the weather data. You can use example "USA Los Angeles 90006" {COUNTRY CITY ZIP_CODE}, or just city. Location can be set to `env`, this means you have to set `YASB_WEATHER_LOCATION` in environment variable or you can set it directly in the configuration file.
 - **api_key:** The API key for accessing the weather service. You can get free API key `weatherapi.com`. API key can be set to `env`, this means you have to set `YASB_WEATHER_API_KEY` in environment variable or you can set it directly in the configuration file.
+- **units:** The units for the weather data. Can be `'metric'` or `'imperial'`.
 - **icons:** A dictionary of icons for different weather conditions `sunnyDay`, `sunnyNight`, `clearDay`, `clearNight`, `cloudyDay`, `cloudyNight`, `rainyDay`, `rainyNight`, `snowyIcyDay`, `snowyIcyNight`, `blizzard`, `default`.
+- **weather_card:** Configuration for the weather card popup display. Controls visibility, appearance, and positioning.
+  - **enabled:** Enable weather card.
+  - **blur:** Enable blur effect for the weather card.
+  - **round_corners:** Enable round corners for weather card.
+  - **round_corners_type:** Border type for weather card can be `normal` and `small`. Default is `normal`.
+  - **border_color:** Border color for weather card can be `None`, `System` or `Hex Color` `"#ff0000"`.
+  - **alignment:** Alignment of the weather card. Possible values are `left`, `center`, and `right`.
+  - **direction:** Direction of the weather card. Possible values are `up` and `down`.
+  - **distance:** Distance of the weather card from the widget.
+  - **icon_size:** Size of the weather icon in pixels.
 - **callbacks:** A dictionary specifying the callbacks for mouse events. The keys are `on_left`, `on_middle`, and `on_right`, and the values are the names of the callback functions.
 
 ## Example Style
@@ -63,5 +88,25 @@ weather:
 .weather-widget .icon.snowyIcyNight {} 
 .weather-widget .icon.blizzard {} 
 .weather-widget .icon.default {}
+/* Weather card style */
+.weather-card {
+    background-color: rgba(17, 17, 27, 0.5);
+}
+.weather-card-today {}
+.weather-card-today .label {
+    font-size: 12px;
+}
+.weather-card-today .label.location {
+    font-size: 24px;
+    font-weight: 700;
+}
+.weather-card-day {
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    background-color:  rgba(17, 17, 27, 0.2);
+}
+.weather-card-day .label {
+    font-size: 12px;
+}
 ```
 
